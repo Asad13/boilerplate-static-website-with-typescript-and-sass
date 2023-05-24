@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin media($width: $xxxl) {
+  @media only screen and (min-width: ($width + 'px')) {
+    @content;
+  }
+}
+
+@mixin mediaMax($width: $xs) {
+  @media only screen and (max-width: ($width + 'px')) {
+    @content;
+  }
+}
+
+@mixin elementTheme($background: $colorPrimary, $shadow: $colorBlack) {
+  background-color: $background;
+  color: $colorWhite;
+  box-shadow: 0 4px 8px 0 $shadow;
+}

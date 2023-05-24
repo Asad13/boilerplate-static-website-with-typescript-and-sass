@@ -1,0 +1,29 @@
+/* Screen Sizes */
+$xs: 375;
+$sm: 640;
+$md: 768;
+$lg: 1024;
+$xl: 1280;
+$xxl: 1440;
+$xxxl: 2560;
+
+/* Colors */
+$colorPrimary: #4c1f50;
+$colorBackground: #313131;
+$colorTextPrimary: #f1f1f1;
+$colorWhite: #ffffff;
+$colorBlack: #010101;
+$colorDanger: #dc3545;
+$colorWarning: #ffc107;
+$colorSuccess: #198754;
+
+/* Fonts */
+$Pangolin: Pangolin, cursive;
+$fontCode: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+/* Box Shadows */
+$boxShadowPrimary: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+/* Transitions */
+$transition1: all 200ms ease-in-out;

@@ -1,0 +1,38 @@
+@use 'variables' as *;
+@use 'mixins';
+
+%heading {
+  font-family: $Pangolin;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.025em;
+}
+
+%body {
+  font-family: $Pangolin;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.025em;
+}
+
+.heading1 {
+  @extend %heading;
+  font-size: 32px;
+
+  @include mixins.media($md) {
+    font-size: 42px;
+  }
+
+  @include mixins.media($lg) {
+    font-size: 48px;
+  }
+}
+
+.body1 {
+  @extend %body;
+  font-size: 14px;
+
+  @include mixins.media($lg) {
+    font-size: 16px;
+  }
+}
